@@ -4,13 +4,13 @@ defmodule Pathfinder.MixProject do
   def project do
     [
       app: :pathfinder,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
       deps: deps(),
-      source_url: "https://github.com/joargp/pathfinder"
+      source_url: "https://github.com/joargp/pathfinder_ex"
     ]
   end
 
@@ -25,7 +25,8 @@ defmodule Pathfinder.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nodejs, "~> 1.0"}
+      {:nodejs, "~> 1.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
@@ -35,7 +36,7 @@ defmodule Pathfinder.MixProject do
 
   defp package() do
     [
-      links: %{"GitHub" => "https://github.com/joargp/pathfinder"},
+      links: %{"GitHub" => "https://github.com/joargp/pathfinder_ex"},
       files: ~w(lib node/jsonpath.js node/package.json .formatter.exs mix.exs README* LICENSE*),
       licenses: ["MIT"]
     ]
