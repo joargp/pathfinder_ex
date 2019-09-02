@@ -26,4 +26,10 @@ defmodule PathfinderTest do
     path = "$..name[:2]"
     assert Pathfinder.query(json, path) == {:ok, ["bobby", "sox"]}
   end
+
+  test "query with count limits matching items" do
+    json = "{\"name\"\: [\"bobby\",\"sox\", \"here\"]}"
+    path = "$..name[:2]"
+    assert Pathfinder.query(json, path, 1) == {:ok, ["bobby"]}
+  end
 end
