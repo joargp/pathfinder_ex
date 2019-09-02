@@ -43,12 +43,12 @@ be found at [https://hexdocs.pm/pathfinder](https://hexdocs.pm/pathfinder).
 
 ## Dev status
 
-[x] .query/2
-[ ] .paths
-[ ] .nodes
-[ ] .parse
-[ ] .parent
-[ ] .value
-[ ] .stringify
+- [x] .query/2
+- [ ] .paths
+- [ ] .nodes
+- [ ] .parse
+- [ ] .parent
+- [ ] .value
+- [ ] .stringify
 
 
