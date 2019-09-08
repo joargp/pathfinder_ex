@@ -2,7 +2,7 @@
 
 jsonpath in elixir through nodejs
 
-made possible thanks to reverly'
+made possible thanks to reverly labs' library https://hex.pm/packages/nodejs
 
 ⚠️WIP. This is an early and uncomplete release, expect breaking changes
 
