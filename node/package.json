@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jsonpath": "^1.1.1"
+    "jsonpath": "^1.3.0"
+  },
+  "overrides": {
+    "underscore": "^1.13.8"
   }
 }
